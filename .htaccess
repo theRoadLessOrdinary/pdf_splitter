@@ -1,0 +1,9 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Uploaded PDFs, the visitor log, and server-side code are read by index.php only
+RewriteEngine On
+RewriteRule ^(todo|cls|vendor|tpl)(/|$) - [F,L]
+<FilesMatch "^usage\.txt$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,4 @@
+# Visitor uploads and the visitor log live on the server only
+todo/*
+!todo/.gitkeep
+usage.txt
